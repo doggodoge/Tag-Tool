@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModelTests.swift; sourceTree = "<group>"; };
 		9DAE7C8E2074E35400857432 /* workingTagger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = workingTagger.py; sourceTree = "<group>"; };
+		9DAE7C942075030600857432 /* libCsvSwift4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCsvSwift4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEAA54B2068FFAB008E52E6 /* Tag Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEAA5522068FFAB008E52E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9DAE7C912075030600857432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DEAA5482068FFAB008E52E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +130,7 @@
 				9DEAA54B2068FFAB008E52E6 /* Tag Tool.app */,
 				9DEAA55D2068FFAB008E52E6 /* Tag ToolTests.xctest */,
 				9DEAA5682068FFAB008E52E6 /* Tag ToolUITests.xctest */,
+				9DAE7C942075030600857432 /* libCsvSwift4.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +171,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9DAE7C922075030600857432 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9DAE7C932075030600857432 /* CsvSwift4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DAE7C9A2075030600857432 /* Build configuration list for PBXNativeTarget "CsvSwift4" */;
+			buildPhases = (
+				9DAE7C902075030600857432 /* Sources */,
+				9DAE7C912075030600857432 /* Frameworks */,
+				9DAE7C922075030600857432 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CsvSwift4;
+			productName = CsvSwift4;
+			productReference = 9DAE7C942075030600857432 /* libCsvSwift4.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		9DEAA54A2068FFAB008E52E6 /* Tag Tool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DEAA5712068FFAB008E52E6 /* Build configuration list for PBXNativeTarget "Tag Tool" */;
@@ -226,6 +262,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Gary Moore";
 				TargetAttributes = {
+					9DAE7C932075030600857432 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
 					9DEAA54A2068FFAB008E52E6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -258,6 +299,7 @@
 				9DEAA54A2068FFAB008E52E6 /* Tag Tool */,
 				9DEAA55C2068FFAB008E52E6 /* Tag ToolTests */,
 				9DEAA5672068FFAB008E52E6 /* Tag ToolUITests */,
+				9DAE7C932075030600857432 /* CsvSwift4 */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +332,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9DAE7C902075030600857432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DEAA5472068FFAB008E52E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +394,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9DAE7C9B2075030600857432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42RXLCPKL9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CsvSwift4/CsvSwift4-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9DAE7C9C2075030600857432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42RXLCPKL9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CsvSwift4/CsvSwift4-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		9DEAA56F2068FFAB008E52E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +636,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9DAE7C9A2075030600857432 /* Build configuration list for PBXNativeTarget "CsvSwift4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE7C9B2075030600857432 /* Debug */,
+				9DAE7C9C2075030600857432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DEAA5462068FFAB008E52E6 /* Build configuration list for PBXProject "Tag Tool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
