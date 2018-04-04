@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9DAE7C8C2074CFEC00857432 /* InputViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */; };
+		9DAE7C8F2074E35400857432 /* workingTagger.py in Resources */ = {isa = PBXBuildFile; fileRef = 9DAE7C8E2074E35400857432 /* workingTagger.py */; };
 		9DEAA54F2068FFAB008E52E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */; };
 		9DEAA5532068FFAB008E52E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAA5522068FFAB008E52E6 /* Assets.xcassets */; };
 		9DEAA5562068FFAB008E52E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAA5542068FFAB008E52E6 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModelTests.swift; sourceTree = "<group>"; };
+		9DAE7C8E2074E35400857432 /* workingTagger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = workingTagger.py; sourceTree = "<group>"; };
 		9DEAA54B2068FFAB008E52E6 /* Tag Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEAA5522068FFAB008E52E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DAE7C8D2074E32A00857432 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9DAE7C8E2074E35400857432 /* workingTagger.py */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		9DDF5F8F206BCAC100C698CA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		9DEAA54D2068FFAB008E52E6 /* Tag Tool */ = {
 			isa = PBXGroup;
 			children = (
+				9DAE7C8D2074E32A00857432 /* Scripts */,
 				9DDF5F90206BDB5900C698CA /* Models */,
 				9DDF5F8F206BCAC100C698CA /* View Controllers */,
 				9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */,
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEAA5532068FFAB008E52E6 /* Assets.xcassets in Resources */,
+				9DAE7C8F2074E35400857432 /* workingTagger.py in Resources */,
 				9DEAA5562068FFAB008E52E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
