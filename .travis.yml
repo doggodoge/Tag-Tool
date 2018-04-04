@@ -1,5 +1,5 @@
 language: swift
-xcode_workspace: Tag\ Tool.xcodeproj/project.xcworkspace
+xcode_workspace: Tag\ Tool.xcworkspace
 os: osx
 osx_image: xcode9.2
 xcode_scheme: Test-Tool
