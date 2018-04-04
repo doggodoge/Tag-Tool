@@ -26,41 +26,4 @@ struct InputViewModel {
             return nil
         }
     }
-    
-    static func getFilePathWithOpenPanel() -> String? {
-        // Use NSOpenPanel to get file path
-        let openFile = AppKit.NSOpenPanel()
-        openFile.allowsMultipleSelection = false
-        openFile.canChooseDirectories = false
-        openFile.canChooseFiles = true
-        openFile.allowedFileTypes = ["csv"]
-        let i = openFile.runModal()
-        
-        if (i == .OK) {
-            return openFile.url!.path
-        } else {
-            return nil
-        }
-    }
-    
-    static func invokeTaggerProcess(Path: String, From: String, To: String,
-                                    Tag: String, OperationType: String,
-                                    WriteLocation: String) -> String {
-        let scriptPath = Bundle.main.bundlePath + "Scripts/workingTagger.pi"
-        let arguments  = [scriptPath,
-                          Path,
-                          From,
-                          To,
-                          Tag,
-                          OperationType,
-                          WriteLocation]
-        let taggerTask = Process()
-        let taggerPipe = Pipe()
-        
-        taggerTask.arguments = arguments
-        taggerTask.standardOutput = taggerPipe
-        taggerTask.launchPath = "/usr/local/bin/Python3.6"
-        taggerTask.launch()
-        taggerTask.waitUntilExit()
-    }
 }

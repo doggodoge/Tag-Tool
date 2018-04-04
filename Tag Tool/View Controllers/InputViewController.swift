@@ -31,12 +31,13 @@ class InputViewController: NSViewController {
     
     @IBAction func openFileClick(_ sender: NSButton) {
         // Get file path using NSOpenPanel and set label with same value
-        let optionalFilePath = InputViewModel.getFilePathWithOpenPanel()
+        let optionalFilePath = getFilePathWithOpenPanel()
         csvPath.stringValue = optionalFilePath != nil ? optionalFilePath! : ""
-        
+        // Get header from the csv
         let optionalHeader = InputViewModel.getHeaderFromCsv(
             csvPath: csvPath.stringValue)
         let header = optionalHeader != nil ? optionalHeader! : Array<String>()
+        // Populate 2 lists in UI using header from list
         for heading in header {
             fromPopUp.addItem(withTitle: String(heading))
             toPopUp.addItem(withTitle: String(heading))
@@ -44,11 +45,20 @@ class InputViewController: NSViewController {
     }
     
     @IBAction func submitClick(_ sender: NSButton) {
-        InputViewModel.invokeTaggerProcess(Path: csvPath.stringValue,
-                                           From: fromPopUp.stringValue,
-                                           To: toPopUp.stringValue,
-                                           Tag: replaceTextField.stringValue,
-                                           OperationType: typePopUp.stringValue,
-                                           WriteLocation: "placeholder")
+    }
+    
+    func getFilePathWithOpenPanel() -> String? {
+        // Use NSOpenPanel to get file path
+        let openFile = AppKit.NSOpenPanel()
+        openFile.allowsMultipleSelection = false
+        openFile.canChooseDirectories = false
+        openFile.canChooseFiles = true
+        openFile.allowedFileTypes = ["csv"]
+        let i = openFile.runModal()
+        if (i == .OK) {
+            return openFile.url!.path
+        } else {
+            return nil
+        }
     }
 }

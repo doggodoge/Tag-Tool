@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DDF5F93206BE79700C698CA /* workingTagger.py in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF5F92206BE79600C698CA /* workingTagger.py */; };
+		9DAE7C8C2074CFEC00857432 /* InputViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */; };
 		9DEAA54F2068FFAB008E52E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */; };
 		9DEAA5532068FFAB008E52E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAA5522068FFAB008E52E6 /* Assets.xcassets */; };
 		9DEAA5562068FFAB008E52E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAA5542068FFAB008E52E6 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9DDF5F92206BE79600C698CA /* workingTagger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = workingTagger.py; path = ../../../../Downloads/TagToolTesting2/TagToolTesting2/Resources/workingTagger.py; sourceTree = "<group>"; };
+		9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModelTests.swift; sourceTree = "<group>"; };
 		9DEAA54B2068FFAB008E52E6 /* Tag Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEAA5522068FFAB008E52E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,14 +96,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9DDF5F91206BE75200C698CA /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				9DDF5F92206BE79600C698CA /* workingTagger.py */,
-			);
-			path = Scripts;
-			sourceTree = "<group>";
-		};
 		9DEAA5422068FFAB008E52E6 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +119,6 @@
 		9DEAA54D2068FFAB008E52E6 /* Tag Tool */ = {
 			isa = PBXGroup;
 			children = (
-				9DDF5F91206BE75200C698CA /* Scripts */,
 				9DDF5F90206BDB5900C698CA /* Models */,
 				9DDF5F8F206BCAC100C698CA /* View Controllers */,
 				9DEAA54E2068FFAB008E52E6 /* AppDelegate.swift */,
@@ -144,6 +135,7 @@
 			children = (
 				9DEAA5612068FFAB008E52E6 /* Tag_ToolTests.swift */,
 				9DEAA5632068FFAB008E52E6 /* Info.plist */,
+				9DAE7C8B2074CFEC00857432 /* InputViewModelTests.swift */,
 			);
 			path = "Tag ToolTests";
 			sourceTree = "<group>";
@@ -265,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEAA5532068FFAB008E52E6 /* Assets.xcassets in Resources */,
-				9DDF5F93206BE79700C698CA /* workingTagger.py in Resources */,
 				9DEAA5562068FFAB008E52E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEAA5622068FFAB008E52E6 /* Tag_ToolTests.swift in Sources */,
+				9DAE7C8C2074CFEC00857432 /* InputViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
