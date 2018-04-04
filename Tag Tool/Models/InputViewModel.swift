@@ -26,6 +26,4 @@ struct InputViewModel {
             return nil
         }
     }
-    
-    static func tagTool
 }
