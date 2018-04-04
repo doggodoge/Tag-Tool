@@ -45,6 +45,7 @@ class InputViewController: NSViewController {
     }
     
     @IBAction func submitClick(_ sender: NSButton) {
+        
     }
     
     func getFilePathWithOpenPanel() -> String? {
