@@ -15,6 +15,7 @@ class ResultsViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
+    
     @IBAction func onClearButtonClick(_ sender: NSButton) {
         terminalOutput.textStorage?.setAttributedString(
             NSAttributedString(string: ""))
