@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/MadManGaz/Tag-Tool.svg?token=Sx12AAWLX4ipjsWQNVEs&branch=master)](https://travis-ci.com/MadManGaz/Tag-Tool)
 
-# RIP, Died of Bit Rot.
+# RIP ⚰️ Died of Bit Rot.
 
 This was written before swift stabilized.
 
