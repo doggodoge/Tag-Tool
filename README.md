@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/MadManGaz/Tag-Tool.svg?token=Sx12AAWLX4ipjsWQNVEs&branch=master)](https://travis-ci.com/MadManGaz/Tag-Tool)
+moved to https://git.sr.ht/~gary_moore/Tag-Tool
 
 # RIP ⚰️ Died of Bit Rot.
 
